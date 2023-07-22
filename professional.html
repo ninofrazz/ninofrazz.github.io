@@ -1,0 +1,349 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+  <title>Antonino Frazzitta Portfolio</title>
+  <link rel="icon" href="images/favicon.png">
+
+</head>
+<!--Autohide navbar Script-->
+<style type="text/css">
+  .autohide {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1030;
+  }
+
+  .scrolled-down {
+    transform: translateY(-100%);
+    transition: all 0.3s ease-in-out;
+  }
+
+  .scrolled-up {
+    transform: translateY(0);
+    transition: all 0.3s ease-in-out;
+  }
+
+  .position-relative {
+    position: relative;
+  }
+
+  .position-relative {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+
+  .custom-rounded {
+    border-radius: 10px;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+    /* Prevent the overlay from blocking mouse events */
+  }
+
+
+  .thicker-hr {
+    height: 1px;
+    /* Adjust the height to make it thicker */
+    border: none;
+    /* Remove the default border */
+    background-color: darkgray;
+    /* Set the background color for the thicker line */
+  }
+
+  .project-preview {
+    border: 1px solid #0c131a73;
+  }
+
+  .bordered-text {
+    padding: 5px 10px;
+    border-radius: 30px;
+    background-color: rgb(219, 35, 35);
+    font-size: 15px;
+    color: white;
+    vertical-align: 5px;
+  }
+
+  .image-wrapper {
+    padding-top: 22px;
+  }
+
+  @keyframes slide {
+    from {
+      transform: translateX(0);
+    }
+
+    to {
+      transform: translateX(-100%);
+    }
+  }
+
+  .logos {
+    overflow: hidden;
+    padding: 20px 0;
+    background: white;
+    white-space: nowrap;
+    position: relative;
+  }
+
+  .logos:before,
+  .logos:after {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+    content: "";
+    z-index: 2;
+  }
+
+  .logos:before {
+    left: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+  }
+
+  .logos:after {
+    right: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+  }
+
+
+  .logos:hover .logos-slide {
+    animation-play-state: paused;
+  }
+
+  .logos-slide {
+    display: inline-block;
+    animation: 35s slide infinite linear;
+  }
+
+  .logos-slide img {
+    height: 80px;
+    margin: 0 30px;
+  }
+
+  body {
+    background: linear-gradient(to bottom, #0f6ec1, #072847);
+    color: white;
+  }
+
+  .title {
+    transition: opacity 0.3s ease;
+  }
+
+  .title:hover {
+    opacity: 0.6;
+  }
+</style>
+
+<body>
+
+  <nav class="autohide navbar navbar-expand-md navbar-dark" style="background-color: #0c131a;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">ANTONINO FRAZZITTA</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav m-auto">
+          <li class="nav-item">
+            <a class="nav-link px-5 font-weight-bold" aria-current="page" href="index.html">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-5 font-weight-bold" href="projects.html" tabindex="-1" aria-disabled="true">ALL
+              PROJECTS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active px-5 font-weight-bold" href="professional.html" tabindex="-1"
+              aria-disabled="true">PROFESSIONAL</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-5 font-weight-bold" href="about.html" tabindex="-1" aria-disabled="true">ABOUT
+              ME</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <h2 class="text-center article-spacer pt-3">PROFESSIONAL
+    <hr class=" thicker-hr mb-3">
+  </h2>
+  </div>
+  <!-- <h2 class="text-center">INCISIV - CLEANSHEET </h2> -->
+  <a class="title" href="https://www.incisiv.tech/cleansheet">
+    <div class="container text-center mb-3"><img src="images/cleansheet/name.png" style="width: 70%;"></div>
+  </a>
+  <h3 class="text-center mb-3 open-sans" style="font-weight: bold;">May 2020 - Current | VR Game Designer </h3>
+  <div class="container text-center">
+    <video src="videos/incisiv_cleansheet.mp4" controls poster="images/cleansheet/cover.jpg" style="width: 1000px;">
+    </video>
+  </div>
+  <div class="container mt-3 open-sans">
+    <p>
+      I initially started my career in the game development industry as an intern with Incisiv. Throughout my time at
+      Incisiv, I had the opportunity to work on a diverse range of projects and assume various roles within the team.
+      Some of the roles I undertook during my tenure at Incisiv include:</p>
+    <br>
+    <li>Designing VR solutions tailored to the specific needs of clients, ensuring seamless integration into the VR
+      environment.</li>
+    <li>Crafting intuitive and visually appealing user interfaces (UI) for both 2D and 3D variations within VR worlds.
+    </li>
+    <li>Implementing VR experiences using Unity 3D and leveraging the power of C# programming language.</li>
+    <li>Curating levels and designing immersive environments that maximize the VR experience.</li>
+    <li>Creating high-quality 3D assets to enhance the visual fidelity and realism of VR products.
+    </li>
+    <li>Modelling and rigging 3D characters to facilitate seamless game interactions.</li>
+    <li>Optimizing 3D polygons to maintain optimal performance without compromising visual quality.</li>
+    <li>Developing engaging 3D animations to provide tutorial instructions and enhance user understanding.</li>
+    <li>Producing highly detailed branded ball textures, adding a level of sophistication and customization to VR
+      experiences.</li>
+    <br><br>
+
+  </div>
+  <div class="container">
+    <p>Throughout this experience, I have gained invaluable knowledge, particularly in collaborating with diverse
+      disciplines within a professional team and meeting tight deadlines while maintaining consistency. Additionally, I
+      have honed my ability to adapt to clients' requests, utilizing a wide range of tools at my disposal.</p>
+  </div>
+
+  <div class="container  text-center" style="margin-bottom: 180px; margin-top: 170px;">
+    <div class="row mt-5 mx-auto" style="width: 94%;">
+
+      <div class="col">
+        <div id="carouselExampleIndicators1" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+
+
+
+          </ol>
+          <div class="carousel-inner">
+            <div class=" carousel-item active">
+              <img class="d-block mx-auto" src="images/cleansheet/1.jpg" alt="First slide" style="width: 100%;">
+              <div class="" style="color: rgb(255, 255, 255);">
+              </div>
+            </div>
+            <div class=" carousel-item">
+              <img class="d-block mx-auto" src="images/cleansheet/2.jpg" alt="Second slide" style="width: 100%;">
+              <div class="" style="color: rgb(255, 255, 255);">
+              </div>
+            </div>
+            <div class="carousel-item" style="justify-content:center;">
+              <img class="d-block mx-auto" src="images/cleansheet/3.jpg" alt="Third slide" style="width: 100%;">
+              <div class="" style="color: rgb(255, 255, 255);">
+              </div>
+            </div>
+            <div class="carousel-item" style="justify-content:center;">
+              <img class="d-block mx-auto" src="images/cleansheet/4.jpg" alt="Forth slide" style="width: 100%;">
+              <div class="" style="color: rgb(255, 255, 255);">
+              </div>
+            </div>
+            <div class="carousel-item" style="justify-content:center;">
+              <img class="d-block mx-auto" src="images/cleansheet/5.jpg" alt="Forth slide" style="width: 100%;">
+              <div class="" style="color: rgb(255, 255, 255);">
+              </div>
+            </div>
+
+
+          </div>
+          <img src="images/Arrow_Left1.png" class="carousel-control-prev" href="#carouselExampleIndicators1"
+            role="button" data-slide="prev">
+
+          </a>
+          <img src="images/Arrow_Right1.png" class="carousel-control-next" href="#carouselExampleIndicators1"
+            role="button" data-slide="next">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <hr class="thicker-hr" style="margin-bottom: 0px;">
+  <footer class="footer article-spacer text-center">
+    <p>© Antonino Frazzitta 2023</p>
+  </footer>
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+    integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script type="text/javascript">
+    document.addEventListener("DOMContentLoaded", function () {
+
+      el_autohide = document.querySelector('.autohide');
+
+      // add padding-top to bado (if necessary)
+      navbar_height = document.querySelector('.navbar').offsetHeight;
+      document.body.style.paddingTop = navbar_height + 'px';
+
+      if (el_autohide) {
+
+        var last_scroll_top = 0;
+        window.addEventListener('scroll', function () {
+          let scroll_top = window.scrollY;
+          if (scroll_top < last_scroll_top) {
+            el_autohide.classList.remove('scrolled-down');
+            el_autohide.classList.add('scrolled-up');
+          }
+          else {
+            el_autohide.classList.remove('scrolled-up');
+            el_autohide.classList.add('scrolled-down');
+          }
+          last_scroll_top = scroll_top;
+
+        });
+        // window.addEventListener
+
+      }
+      // if
+
+    });
+      // DOMContentLoaded  end
+  </script>
+</body>
+
+</html>

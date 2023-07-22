@@ -1,0 +1,338 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+
+  <title>Antonino Frazzitta Portfolio</title>
+  <link rel="icon" href="images/favicon.png">
+
+</head>
+<!--Autohide navbar Script-->
+<style type="text/css">
+  body {
+    background: linear-gradient(to bottom, #3a7188, #203b43);
+    color: white;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: bold;
+  }
+
+  .autohide {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1030;
+  }
+
+  .scrolled-down {
+    transform: translateY(-100%);
+    transition: all 0.3s ease-in-out;
+  }
+
+  .scrolled-up {
+    transform: translateY(0);
+    transition: all 0.3s ease-in-out;
+  }
+
+  .position-relative {
+    position: relative;
+  }
+
+  .position-relative {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .custom-rounded {
+    border-radius: 10px;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+    /* Prevent the overlay from blocking mouse events */
+  }
+
+  .position-relative:hover .overlay {
+    opacity: 1;
+  }
+
+  .thicker-hr {
+    height: 1px;
+    /* Adjust the height to make it thicker */
+    border: none;
+    /* Remove the default border */
+    background-color: darkgray;
+    /* Set the background color for the thicker line */
+  }
+
+  .project-preview {
+    border: 1px solid #0c131a73;
+  }
+
+  .bordered-text {
+    padding: 5px 10px;
+    border-radius: 30px;
+    background-color: rgb(219, 35, 35);
+    font-size: 15px;
+    color: white;
+    vertical-align: 5px;
+  }
+
+
+  .image-wrapper {
+    padding-top: 22px;
+  }
+
+  .img-thumbnail {
+    padding: 0px;
+    border: 0px;
+  }
+
+  .video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Adjust the height as needed */
+  }
+
+  .carousel-control-prev {
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    margin-left: 10px;
+  }
+
+  .carousel-control-next {
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    margin-right: 10px;
+  }
+
+  .carousel {
+    display: flex;
+    align-items: center;
+    height: 300px;
+    /* Adjust the height as needed */
+  }
+
+  .carousel-inner {
+    display: flex;
+    align-items: center;
+  }
+
+  .carousel-inner img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+  }
+
+  .footer {
+    padding: 20px;
+    height: 60px;
+  }
+</style>
+
+<body>
+  <nav class="autohide navbar navbar-expand-md navbar-dark" style="background-color: #0c131a;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">ANTONINO FRAZZITTA</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav m-auto">
+          <li class="nav-item">
+            <a class="nav-link px-5 font-weight-bold" aria-current="page" href="index.html">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active px-5 font-weight-bold" href="projects.html" tabindex="-1" aria-disabled="true">ALL
+              PROJECTS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-5 font-weight-bold" href="professional.html" tabindex="-1"
+              aria-disabled="true">PROFESSIONAL</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-5 font-weight-bold" href="about.html" tabindex="-1" aria-disabled="true">ABOUT
+              ME</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <h2 class="text-center article-spacer pt-3">TINTIN: DESTINATION MOON
+    <hr class="thicker-hr mb-3">
+  </h2>
+  </div>
+
+  <div class="open-sans">
+    <div class="container-fluid mx-auto">
+      <div class="container">
+        <div class="container mx-auto image-wrapper">
+          <div class=" row">
+            <div class="col-6">
+              <div class="">
+                <img src="images/tin_tin_images/cover1.png" alt="" class="img-fluid mx-auto">
+                <div class="overlay"></div>
+              </div>
+              </a>
+            </div>
+            <div class="col">
+              <p style="font-size: 15px;line-height: 1.6;">
+                A level recreation of the cover scene from Tintin: Destination Moon, emphasizing on lighting and
+                texturing.
+                <br><br><br><br><br><br><br><b>Date:</b> 2020
+                <br><b>Purpose:</b> Texturing and Lighting for BSc
+                <br><b>Subjects:</b>Level Design, Texturing, Lighting
+                <br><b>Programs:</b> Unreal Engine, Maya, Photoshop
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container my-3">
+      <h2>The Concept</h2>
+      <p>
+        For our assignment, we have been tasked with recreating the iconic Tintin comic cover scene in our own style.
+        Additionally, we are required to UV unwrap and texture the models to bring them to life.
+      </p>
+    </div>
+
+
+    <div class="container my-0">
+    </div>
+
+    <div class="container mt-5 mb-1 mx-auto d-flex justify-content-center align-items-center">
+      <img src="images/tin_tin_images/cover.jpg" alt="Image" class="" style="width: 103%;">
+    </div>
+  </div>
+  <div class="container my-0">
+    <div class="caption text-center">A global shot capturing all the elements of the scene in one frame.
+
+    </div>
+  </div>
+
+  <div class="container mt-5 mb-1 mx-auto d-flex justify-content-center align-items-center">
+    <img src="images/tin_tin_images/rocket.jpg" alt="Image" class="" style="width: 100%;">
+  </div>
+  </div>
+  <div class="container my-0">
+    <div class="caption text-center">I have added a pattern to simulate the appearance of metal plates. Additionally, I
+      made the metal slightly reflective to maintain a cartoon-like style, while still reminding viewers of its origin.
+    </div>
+  </div>
+
+  <div class="container mt-5 mb-1 mx-auto d-flex justify-content-center align-items-center">
+    <img src="images/tin_tin_images/jeep.jpg" alt="Image" class="" style="width: 100%;">
+  </div>
+  </div>
+  <div class="container my-0">
+    <div class="caption text-center">
+      A frontal shot showcasing the painted light holes and grid on the jeep, achieved through normal painting
+      techniques.
+    </div>
+  </div>
+
+  <div class="container mt-5 mb-1 mx-auto d-flex justify-content-center align-items-center">
+    <img src="images/tin_tin_images/platform.jpg" alt="Image" class="" style="width: 100%;">
+  </div>
+  </div>
+  <div class="container my-0">
+    <div class="caption text-center">
+      A shot highlighting the platform, where a combination of concrete and metal materials was used. Additionally,
+      spotlights have been added to enhance the credibility and atmosphere of the rocket launch scene.
+    </div>
+  </div>
+
+
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  <hr class="thicker-hr" style="margin-bottom: 0px;">
+  <footer class="footer article-spacer text-center">
+    <p>© Antonino Frazzitta 2023</p>
+  </footer>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src=" https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script type="text/javascript">
+    document.addEventListener("DOMContentLoaded", function () {
+
+      el_autohide = document.querySelector('.autohide');
+
+      // add padding-top to bado (if necessary)
+      navbar_height = document.querySelector('.navbar').offsetHeight;
+      document.body.style.paddingTop = navbar_height + 'px';
+
+      if (el_autohide) {
+
+        var last_scroll_top = 0;
+        window.addEventListener('scroll', function () {
+          let scroll_top = window.scrollY;
+          if (scroll_top < last_scroll_top) {
+            el_autohide.classList.remove('scrolled-down');
+            el_autohide.classList.add('scrolled-up');
+          }
+          else {
+            el_autohide.classList.remove('scrolled-up');
+            el_autohide.classList.add('scrolled-down');
+          }
+          last_scroll_top = scroll_top;
+
+        });
+        // window.addEventListener
+
+      }
+      // if
+
+    });
+      // DOMContentLoaded  end
+  </script>
+  <script src="script.js"></script>
+
+</body>
+
+</html>

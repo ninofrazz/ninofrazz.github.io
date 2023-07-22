@@ -1,0 +1,387 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+
+  <title>Antonino Frazzitta Portfolio</title>
+  <link rel="icon" href="images/favicon.png">
+
+
+</head>
+<!--Autohide navbar Script-->
+<style type="text/css">
+  .autohide {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1030;
+  }
+
+  .scrolled-down {
+    transform: translateY(-100%);
+    transition: all 0.3s ease-in-out;
+  }
+
+  .scrolled-up {
+    transform: translateY(0);
+    transition: all 0.3s ease-in-out;
+  }
+
+  .position-relative {
+    position: relative;
+  }
+
+  .position-relative {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+
+  .custom-rounded {
+    border-radius: 10px;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+    /* Prevent the overlay from blocking mouse events */
+  }
+
+
+  .thicker-hr {
+    height: 1px;
+    /* Adjust the height to make it thicker */
+    border: none;
+    /* Remove the default border */
+    background-color: darkgray;
+    /* Set the background color for the thicker line */
+  }
+
+  .project-preview {
+    border: 1px solid #0c131a73;
+  }
+
+  .bordered-text {
+    padding: 5px 10px;
+    border-radius: 30px;
+    background-color: rgb(219, 35, 35);
+    font-size: 15px;
+    color: white;
+    vertical-align: 5px;
+  }
+
+  .image-wrapper {
+    padding-top: 22px;
+  }
+
+  @keyframes slide {
+    from {
+      transform: translateX(0);
+    }
+
+    to {
+      transform: translateX(-100%);
+    }
+  }
+
+  .logos {
+    overflow: hidden;
+    padding: 20px 0;
+    background: white;
+    white-space: nowrap;
+    position: relative;
+  }
+
+  .logos:before,
+  .logos:after {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+    content: "";
+    z-index: 2;
+  }
+
+  .logos:before {
+    left: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+  }
+
+  .logos:after {
+    right: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+  }
+
+
+  .logos:hover .logos-slide {
+    animation-play-state: paused;
+  }
+
+  .logos-slide {
+    display: inline-block;
+    animation: 35s slide infinite linear;
+  }
+
+  .logos-slide img {
+    height: 80px;
+    margin: 0 30px;
+  }
+</style>
+
+<body>
+
+  <nav class="autohide navbar navbar-expand-md navbar-dark" style="background-color: #0c131a;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">ANTONINO FRAZZITTA</a>
+      <button class=" navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav m-auto">
+          <li class="nav-item">
+            <a class="nav-link px-5 font-weight-bold" aria-current="page" href="index.html">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-5 font-weight-bold" href="projects.html" tabindex="-1" aria-disabled="true">ALL
+              PROJECTS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-5 font-weight-bold" href="professional.html" tabindex="-1"
+              aria-disabled="true">PROFESSIONAL</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active px-5 font-weight-bold" href="about.html" tabindex="-1" aria-disabled="true">ABOUT
+              ME</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <h2 class="text-center article-spacer pt-3">ABOUT ME
+    <hr class="thicker-hr mb-3">
+  </h2>
+  </div>
+  <div class="container mt-4 mb-3">
+    <img src="images/photo_Icon1.png" alt="" class="img-fluid mx-auto" style="width: 25%; display: flex;">
+    <div class="overlay"></div>
+  </div>
+
+  <div class="container mb-3" style="text-align: center;">
+    <a href="images/CV_ANTONINO FRAZZITTA.pdf">
+      <button class="btn btn-dark" style="height: 50px; width: 16%;"><b style="font-family: Open Sans;">CHECK
+          CV</b></button>
+    </a>
+  </div>
+
+
+  <div class="container mx-auto text-center" style=" font-family: Open Sans;font-size: 17px;">
+    <p>I am a game designer constantly driven by a relentless pursuit of creativity and innovation within the realm of
+      games. With an unwavering passion for the medium, I am consistently striving for self-improvement and pushing
+      the
+      boundaries of game design.
+      Thanks to my comprehensive studies, I have acquired a diverse skill set within the games industry. However, my
+      true passion lies in delving deeper into the realms of interaction and storytelling.</p>
+    <p>I aim to bring stories to life and create immersive experiences. By combining compelling storytelling,
+      captivating visuals, and interactive elements, I strive to transport viewers into rich narrative worlds.
+      Through meticulous attention to detail and innovative techniques, I aim to captivate their senses, evoke genuine
+      emotions, and leave a lasting impact. Ultimately, my goal is to create unforgettable experiences that resonate
+      with audiences and spark their imagination long after the story concludes.</p>
+  </div>
+  <h2 class="text-center mt-5">EDUCATION</h2>
+
+
+  <div class="container mt-4 px-0">
+    <div class="row mx-5 px-0">
+      <div class="col mx-5 px-0">
+        <div class="card">
+          <div class="card-body open-sans">
+            <div class="mx-3">
+              <ul class="list-group list-group-flush mt-2">
+
+                <li class="list-group-item">
+                  <h4 style="font-weight: bold;">Bournemouth University</h4>
+                  <strong>2018 - 2021</strong> Bachelor of Science - BSc (Hons), Game Design
+                  <br>
+                  Grade: First Class Honours
+                </li>
+                <li class="list-group-item">
+                  <h4 style="font-weight: bold;">Sussex Coast College Hastings</h4>
+                  <strong>2017</strong>
+                  GCSE English
+                </li>
+                <li class="list-group-item">
+                  <h4 style="font-weight: bold;">Sussex Coast College Hastings</h4>
+                  <strong>2016 - 2018</strong>
+                  BTEC LEVEL 3 Diploma, Information Technology
+                  <p> Grade: D* D* D</p>
+                </li>
+                <li class="list-group-item">
+                  <h4 style="font-weight: bold;">I.T.N Marino Torre Trapani</h4>
+                  <strong>2010 - 2014</strong>
+                  High School Diploma, Naval Architecture and Marine Engineering
+                </li>
+            </div>
+          </div>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <h2 class="text-center mt-5 mb-3">CONTACTS</h2>
+  <div class="container text-center open-sans">To connect with me, please don't hesitate to reach out via
+    <a href="mailto:frazzittanino94@gmail.com" class="no-underline">
+      email </a>
+    or <a href="https://www.linkedin.com/in/antonino-frazzitta/">Linkedin</a>. I
+    welcome the chance to engage in fruitful conversations and explore potential collaborations in our shared areas of
+    interest.
+
+  </div>
+  <h2 class="text-center mt-5">TECHNICAL KNOWLEDGE</h2>
+
+  </div>
+
+  <body>
+    <!-- <div class="slider-area">
+      <div class="wrapper">
+      <div class="wrapper1">
+        </div>
+        <img src="images/programs_logos/twine.png">
+        <img src="images/programs_logos/Audacity.png">
+        <img src="images/programs_logos/game_maker.png">
+
+        <img class="logo" alt="" src="images/programs_logos/zbrush.png"></div>
+      </div>
+    </div> -->
+
+    <div class="logos mb-3">
+      <div class="logos-slide">
+        <img src="images/programs_logos/Microsoft Office.png" />
+        <img src="images/programs_logos/Adobe Photoshop CC.png" style="height: 110px;" />
+        <img src="images/programs_logos/Adobe Illustrator CC.png" style="height: 110px;" />
+        <img src="images/programs_logos/Adobe Premiere 2020.png" style="height: 110px;" />
+        <img src="images/programs_logos/unity.png" />
+        <img src="images/programs_logos/unreal.png" style="height: 150px;" />
+        <img src="images/programs_logos/Substance Painter.png" style="height: 150px;" />
+        <img src="images/programs_logos/Substance Designer.png" style="height: 150px;" />
+        <img src="images/programs_logos/Microsoft Visual Studio.png" style="height: 220px;" />
+        <img src="images/programs_logos/Autodesk-Maya-Logo-2016.png" style="height: 170px;" />
+        <img src="images/programs_logos/blender_logo.png" />
+        <img src="images/programs_logos/twine.png" style="height: 120px;" />
+        <img src="images/programs_logos/Audacity.png" />
+        <img src="images/programs_logos/game_maker.png" />
+        <img src="images/programs_logos/zbrush.png" style="height: 100px;" />
+        <img src="images/programs_logos/construct2.png" style="height: 150px;">
+      </div>
+      <div class="logos-slide">
+        <img src="images/programs_logos/Microsoft Office.png" />
+        <img src="images/programs_logos/Adobe Photoshop CC.png" style="height: 110px;" />
+        <img src="images/programs_logos/Adobe Illustrator CC.png" style="height: 110px;" />
+        <img src="images/programs_logos/Adobe Premiere 2020.png" style="height: 110px;" />
+        <img src="images/programs_logos/unity.png" />
+        <img src="images/programs_logos/unreal.png" style="height: 150px;" />
+        <img src="images/programs_logos/Substance Painter.png" style="height: 150px;" />
+        <img src="images/programs_logos/Substance Designer.png" style="height: 150px;" />
+        <img src="images/programs_logos/Microsoft Visual Studio.png" style="height: 220px;" />
+        <img src="images/programs_logos/Autodesk-Maya-Logo-2016.png" style="height: 170px;" />
+        <img src="images/programs_logos/blender_logo.png" />
+        <img src="images/programs_logos/twine.png" style="height: 120px;" />
+        <img src="images/programs_logos/Audacity.png" />
+        <img src="images/programs_logos/game_maker.png" />
+        <img src="images/programs_logos/zbrush.png" style="height: 100px;" />
+        <img src="images/programs_logos/construct2.png" style="height: 150px;">
+      </div>
+    </div>
+
+</html>
+
+
+
+
+<hr class="thicker-hr" style="margin-bottom: 0px;">
+<footer class="footer article-spacer text-center">
+  <p>© Antonino Frazzitta 2023</p>
+</footer>
+
+
+
+
+
+
+
+
+
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+  integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+  integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+  integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+  integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function () {
+
+    el_autohide = document.querySelector('.autohide');
+
+    // add padding-top to bado (if necessary)
+    navbar_height = document.querySelector('.navbar').offsetHeight;
+    document.body.style.paddingTop = navbar_height + 'px';
+
+    if (el_autohide) {
+
+      var last_scroll_top = 0;
+      window.addEventListener('scroll', function () {
+        let scroll_top = window.scrollY;
+        if (scroll_top < last_scroll_top) {
+          el_autohide.classList.remove('scrolled-down');
+          el_autohide.classList.add('scrolled-up');
+        }
+        else {
+          el_autohide.classList.remove('scrolled-up');
+          el_autohide.classList.add('scrolled-down');
+        }
+        last_scroll_top = scroll_top;
+
+      });
+      // window.addEventListener
+
+    }
+    // if
+
+  });
+      // DOMContentLoaded  end
+</script>
+</body>
+
+</html>

@@ -1,0 +1,485 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+
+  <title>Antonino Frazzitta Portfolio</title>
+  <link rel="icon" href="images/favicon.png">
+
+</head>
+<!--Autohide navbar Script-->
+<style type="text/css">
+  body {
+    background: linear-gradient(to bottom, #daab28, #cd622d);
+    color: b;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: bold;
+  }
+
+
+  .autohide {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1030;
+  }
+
+  .scrolled-down {
+    transform: translateY(-100%);
+    transition: all 0.3s ease-in-out;
+  }
+
+  .scrolled-up {
+    transform: translateY(0);
+    transition: all 0.3s ease-in-out;
+  }
+
+  .position-relative {
+    position: relative;
+  }
+
+  .position-relative {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .custom-rounded {
+    border-radius: 10px;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+    /* Prevent the overlay from blocking mouse events */
+  }
+
+  .position-relative:hover .overlay {
+    opacity: 1;
+  }
+
+  .thicker-hr {
+    height: 1px;
+    /* Adjust the height to make it thicker */
+    border: none;
+    /* Remove the default border */
+    background-color: black;
+    /* Set the background color for the thicker line */
+  }
+
+  .project-preview {
+    border: 1px solid #0c131a73;
+  }
+
+  .bordered-text {
+    padding: 5px 10px;
+    border-radius: 30px;
+    background-color: rgb(219, 35, 35);
+    font-size: 15px;
+    color: white;
+    vertical-align: 5px;
+  }
+
+
+  .image-wrapper {
+    padding-top: 22px;
+  }
+
+  .img-thumbnail {
+    padding: 0px;
+    border: 0px;
+  }
+
+  .video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Adjust the height as needed */
+  }
+
+  .carousel-control-prev {
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    margin-left: 10px;
+  }
+
+  .carousel-control-next {
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    margin-right: 10px;
+  }
+
+  .carousel {
+    display: flex;
+    align-items: center;
+    height: 300px;
+    /* Adjust the height as needed */
+  }
+
+  .carousel-inner {
+    display: flex;
+    align-items: center;
+  }
+
+  .carousel-inner img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+  }
+
+  .footer {
+    padding: 20px;
+    height: 60px;
+  }
+</style>
+
+<body>
+  <nav class="autohide navbar navbar-expand-md navbar-dark" style="background-color: #0c131a;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">ANTONINO FRAZZITTA</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav m-auto">
+          <li class="nav-item">
+            <a class="nav-link px-5 font-weight-bold" aria-current="page" href="index.html">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active px-5 font-weight-bold" href="projects.html" tabindex="-1" aria-disabled="true">ALL
+              PROJECTS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-5 font-weight-bold" href="professional.html" tabindex="-1"
+              aria-disabled="true">PROFESSIONAL</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-5 font-weight-bold" href="about.html" tabindex="-1" aria-disabled="true">ABOUT
+              ME</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <h2 class="text-center article-spacer pt-3">THE COINQUEST
+    <hr class="thicker-hr mb-3">
+  </h2>
+  </div>
+
+  <div class="open-sans">
+    <div class="container-fluid mx-auto">
+      <div class="container">
+        <div class="container mx-auto image-wrapper">
+          <div class=" row">
+            <div class="col-6">
+              <div class="">
+                <img src="images/the_coinquest_images/title.png" alt="" class="img-fluid mx-auto">
+                <div class="overlay"></div>
+              </div>
+              </a>
+            </div>
+            <div class="col">
+              <p style="font-size: 15px;line-height: 1.6;">
+                In this medieval-themed 3D game, you take control of a brave chicken. The top-down camera
+                perspective provides a comprehensive view of the game world.
+                <br><br><b>Date:</b> 2020
+                <br><b>Purpose:</b> User Interface Design for BSc
+                <br><b>Subjects:</b> Game Design,UI Design, Programming
+                <br><b>Programs:</b> Unity, Photoshop, Visual Studio (C#)
+              </p>
+              <a href="https://ninofrazzitta.itch.io/tale">
+                <button class="btn btn-light" style="width: 92%; height: 27%;"><b>Play it: Itch.io</b></button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="container video-container my-5">
+
+    <div class="row">
+      <div class="col">
+        <iframe width="1280" height="720" src="https://www.youtube.com/embed/JWX0EeeWE8o" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+        <div class="caption text-center">Game Trailer</div>
+
+      </div>
+    </div>
+  </div> -->
+
+    <div class="container my-3">
+
+      <h2>My Role</h2>
+      <p>I stepped up as the leader of our team project, ensuring its success. We started by developing the core game
+        together, and then, in the second of the assignment part we were asked to split up as solo for the UI
+        development.</p>
+    </div>
+
+    <div class="container my-3">
+      <div class="row">
+        <div class="col">
+          <h2>The Purpose</h2>
+          <p>The game was developed as part of the UI design assignment, where our objective was to design, create and
+            implement a game and its UI that aligns with the theme. Additionally, the game has to have a on-click
+            movement system that uses AI pathing and a scoring system.
+          </p>
+          <h2>The Concept</h2>
+          <p>The primary goal is to increase your score by collecting coins while minimizing the number of steps taken.
+          </p>
+
+          <p> However, there's an additional challenge to overcome the hunger meter, which gradually depletes over time.
+          </p>
+
+          <p> To ensure your chicken's survival, you must gather apples to replenish the hunger meter. To win the game
+            the chicken must explore all tree zones.
+          </p>
+
+
+        </div>
+        <div class="col">
+          <img src="images/the_coinquest_images/game.jpg" alt="Image" class="img-fluid">
+          <div class="caption text-center">Starting Position</div>
+        </div>
+
+        <div class="container my-4">
+          <h2>Character Selection</h2>
+          <p>When opening selection you are presented with this character selection. Here you can input the name and
+            select the character, which in this case we have only the chicken available. </p>
+          <div class="container justify-content-center d-flex">
+            <img src="images/the_coinquest_images/characters.jpg" alt="Image" class="img-fluid"
+              style="width: 70%;border: solid 5px;">
+          </div>
+          <div class="caption text-center">Character Selector</div>
+        </div>
+        <!-- style="margin-top: 80px;" -->
+        <div class="row mt-4">
+          <div class="col">
+            <img src="images/the_coinquest_images/chest .jpg" alt="Image" class="img-fluid mt-3">
+            <div class="caption text-center">Chest Encounter</div>
+          </div>
+          <div class="col">
+            <h2>Chest Mechanic</h2>
+            <p>The chest is acting as a mystery box, where you will be assigned a randomized amount of points.
+            </p>
+          </div>
+
+
+
+          <div class="container my-4">
+            <h2>Level Design</h2>
+            <p>There are three biomes:</p>
+            <li>Forest</li>
+            <li>Desert</li>
+            <li>Dungeon</li>
+            <br>
+            <p>To access the dungeon, players must find two key fragments, one in the forest and the other in the
+              desert. These fragments are required to unlock a door blocking the path.</p>
+          </div>
+          <div class="container my-5">
+            <div class="container my-5">
+              <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel"
+                style="margin-top: 80px;margin-bottom: 80px;">
+                <ol class=" carousel-indicators" style="filter: invert(100%);">
+                  <!-- <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li> -->
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img class="d-block w-100" src="images/the_coinquest_images/lev1.png" alt="First slide">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="images/the_coinquest_images/lev2.png" alt="Second slide">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="images/the_coinquest_images/lev3.png" alt="Third slide">
+                  </div>
+                </div>
+                <img src="images/Arrow_Left1.png" class="carousel-control-prev" href="#carouselExampleIndicators"
+                  role="button" data-slide="prev">
+
+                </a>
+                <img src="images/Arrow_Right1.png" class="carousel-control-next" href="#carouselExampleIndicators"
+                  role="button" data-slide="next">
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="container my-4">
+            <div class="row">
+              <div class="col">
+                <img src="images/the_coinquest_images/score.jpg" alt="Image" class="img-fluid mt-3">
+                <div class="caption text-center">Score Report</div>
+                <img src="images/the_coinquest_images/scoreboard.png" alt="Image" class="img-fluid mt-3">
+                <div class="caption text-center">Leaderboard</div>
+              </div>
+              <div class="col">
+                <h2>Game Over</h2>
+                <p>
+                  When a game over occurs, a score report will be displayed to the player. If the score achieved is a
+                  new
+                  record, it will be added to the scoreboard.
+                </p>
+                <p>The player's name will be stored and displayed for future game sessions, allowing their name to be
+                  visible to other players as well.
+                  players</p>
+              </div>
+              <div class="container mb-3 text-center">
+                <h2>Low-Fidelity Design</h2>
+                <div class="row mt-5 mx-auto" style="width: 50%;">
+                  <div class="col">
+                    <div id="carouselExampleIndicators1" class="carousel slide" data-ride="carousel">
+                      <ol class="carousel-indicators">
+
+
+
+                      </ol>
+                      <div class="carousel-inner">
+                        <div class=" carousel-item active">
+                          <img class="d-block mx-auto" src="images/the_coinquest_images/Chest.jpg" alt="First slide"
+                            style="width: 80%;">
+                          <div class="" style="color: rgb(255, 255, 255);">
+                            <p><br>Chest</p>
+                          </div>
+                        </div>
+                        <div class=" carousel-item">
+                          <img class="d-block mx-auto" src="images/the_coinquest_images/Game Over.jpg"
+                            alt="Second slide" style="width: 80%;">
+                          <div class="" style="color: rgb(255, 255, 255);">
+                            <p><br>Game Over Screen</p>
+                          </div>
+                        </div>
+                        <div class="carousel-item" style="justify-content:center;">
+                          <img class="d-block mx-auto" src="images/the_coinquest_images/Leaderboard.jpg"
+                            alt="Third slide" style="width: 80%;">
+                          <div class="" style="color: rgb(255, 255, 255);">
+                            <p><br>Leaderboard</p>
+                          </div>
+                        </div>
+                        <div class="carousel-item" style="justify-content:center;">
+                          <img class="d-block mx-auto" src="images/the_coinquest_images/HUD.jpg" alt="Forth slide"
+                            style="width: 80%;">
+                          <div class="" style="color: rgb(255, 255, 255);">
+                            <p><br>HUD</p>
+                          </div>
+                        </div>
+                        <div class="carousel-item" style="justify-content:center;">
+                          <img class="d-block mx-auto" src="images/the_coinquest_images/Title.jpg" alt="Forth slide"
+                            style="width: 45%;">
+                          <div class="" style="color: rgb(255, 255, 255);">
+                            <p><br>Title Screen</p>
+                          </div>
+                        </div>
+                        <div class="carousel-item" style="justify-content:center;">
+                          <img class="d-block mx-auto" src="images/the_coinquest_images/Select Character.jpg"
+                            alt="Forth slide" style="width:  45%;">
+                          <div class="" style="color: rgb(255, 255, 255);">
+                            <p><br>Character Selection</p>
+                          </div>
+                        </div>
+
+                      </div>
+                      <img src="images/Arrow_Left1.png" class="carousel-control-prev" href="#carouselExampleIndicators1"
+                        role="button" data-slide="prev">
+
+                      </a>
+                      <img src="images/Arrow_Right1.png" class="carousel-control-next"
+                        href="#carouselExampleIndicators1" role="button" data-slide="next">
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr class="thicker-hr" style="margin-bottom: 0px;">
+    <footer class="footer article-spacer text-center">
+      <p>© Antonino Frazzitta 2023</p>
+    </footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src=" https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+      </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"></script>
+    <script type="text/javascript">
+      document.addEventListener("DOMContentLoaded", function () {
+
+        el_autohide = document.querySelector('.autohide');
+
+        // add padding-top to bado (if necessary)
+        navbar_height = document.querySelector('.navbar').offsetHeight;
+        document.body.style.paddingTop = navbar_height + 'px';
+
+        if (el_autohide) {
+
+          var last_scroll_top = 0;
+          window.addEventListener('scroll', function () {
+            let scroll_top = window.scrollY;
+            if (scroll_top < last_scroll_top) {
+              el_autohide.classList.remove('scrolled-down');
+              el_autohide.classList.add('scrolled-up');
+            }
+            else {
+              el_autohide.classList.remove('scrolled-up');
+              el_autohide.classList.add('scrolled-down');
+            }
+            last_scroll_top = scroll_top;
+
+          });
+          // window.addEventListener
+
+        }
+        // if
+
+      });
+      // DOMContentLoaded  end
+    </script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

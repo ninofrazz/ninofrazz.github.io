@@ -1,0 +1,541 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+
+
+  <title>Antonino Frazzitta Portfolio</title>
+  <link rel="icon" href="images/favicon.png">
+
+</head>
+<!--Autohide navbar Script-->
+<style type="text/css">
+  .autohide {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1030;
+  }
+
+  .scrolled-down {
+    transform: translateY(-100%);
+    transition: all 0.3s ease-in-out;
+  }
+
+  .scrolled-up {
+    transform: translateY(0);
+    transition: all 0.3s ease-in-out;
+  }
+
+  .position-relative {
+    position: relative;
+  }
+
+  .position-relative {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+
+  .custom-rounded {
+    border-radius: 10px;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+    /* Prevent the overlay from blocking mouse events */
+  }
+
+
+  .thicker-hr {
+    height: 1px;
+    /* Adjust the height to make it thicker */
+    border: none;
+    /* Remove the default border */
+    background-color: darkgray;
+    /* Set the background color for the thicker line */
+  }
+
+  .project-preview {
+    border: 1px solid #0c131a73;
+  }
+
+  .bordered-text {
+    padding: 5px 10px;
+    border-radius: 30px;
+    background-color: rgb(219, 35, 35);
+    font-size: 15px;
+    color: white;
+    vertical-align: 5px;
+  }
+
+  .Level-Tag {
+    background-color: rgb(0, 143, 0);
+  }
+
+  .threeD-Tag {
+    background-color: rgb(108, 31, 185);
+  }
+
+  .image-wrapper {
+    padding-top: 22px;
+  }
+
+  b {
+    font-family: helvetica;
+  }
+</style>
+
+<body>
+
+  <nav class="autohide navbar navbar-expand-md navbar-dark" style="background-color: #0c131a;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">ANTONINO FRAZZITTA</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav m-auto">
+          <li class="nav-item">
+            <a class="nav-link px-5 font-weight-bold" aria-current="page" href="index.html">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active px-5 font-weight-bold" href="projects.html" tabindex="-1" aria-disabled="true">ALL
+              PROJECTS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-5 font-weight-bold" href="professional.html" tabindex="-1"
+              aria-disabled="true">PROFESSIONAL</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-5 font-weight-bold" href="about.html" tabindex="-1" aria-disabled="true">ABOUT ME</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <h2 class="text-center article-spacer pt-3">ALL PROJECTS
+    <hr class="thicker-hr mb-3">
+  </h2>
+
+  </div>
+
+  <div class="container-fluid mx-auto">
+    <div class="container">
+      <div class="container mx-auto image-wrapper">
+        <div class="row wow scroll-animation" data-aos="fade-right" data-aos-duration="1000" data-aos-once>
+          <div class="col-7">
+            <a href="p_the_sunseeker.html" class="">
+              <div class="position-relative project-preview">
+                <img src="images/sunseeker_images/Cover.png" alt="" class="img-thumbnail custom-rounded fit-cover">
+                <div class="overlay"></div>
+              </div>
+            </a>
+          </div>
+          <div class="col mt open-sans">
+            <h2 style="font-weight: bold;">The Sunseeker <br> <span class="bordered-text Level-Tag">LEVEL</span></h2>
+            <p style="font-size: 14.5px;line-height: 1.6;">
+              A captivating cinematic in an open space desert level, featuring a mysterious figure crossing the desert,
+              crafted with Unreal Engine 5.
+              <br><br><br><br><br><b>Date:</b> 2023
+              <br><b>Purpose:</b> Personal Project
+              <br><b>Subjects:</b> Level Design, 3D Art
+              <br><b>Programs:</b> Unreal Engine, Blueprints (UE)
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid mx-auto article-spacer">
+    <div class="container">
+      <div class="container mx-auto image-wrapper">
+        <div class="row wow scroll-animation " data-aos="fade-left" data-aos-duration="1000" data-aos-once>
+          <div class="col-7">
+            <a href="p_monsters_inc.html" class="">
+              <div class="position-relative project-preview">
+                <img src="images/monster_inc_images/cover.png" alt="" class="img-thumbnail custom-rounded fit-cover">
+                <div class="overlay"></div>
+              </div>
+            </a>
+          </div>
+          <div class="col mt open-sans">
+            <h2 style="font-weight: bold;">Monsters, Inc 3D Character <span class="bordered-text threeD-Tag">3D
+                CHARACTER</span>
+            </h2>
+            <p style="font-size: 14.5px;line-height: 1.6;">
+              Character inspired by Sulley from "Monsters, Inc."
+              <br><br><br><br><br>
+              <br<br<br><br><b>Date:</b> 2023
+                <br><b>Purpose:</b> Modelling for Animation for BSc
+                <br><b>Subjects:</b> 3D Modelling, Rigging, Texturing, Rendering, Animation (Posing)
+                <br><b>Programs:</b> Maya, Blender
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container-fluid mx-auto">
+    <div class="container ">
+      <div class="container mx-auto image-wrapper">
+        <div class="row wow scroll-animation" data-aos="fade-right" data-aos-duration="1000" data-aos-once>
+          <div class="col-7">
+            <a href="p_tale.html" class="">
+              <div class="position-relative project-preview">
+                <img src="images/tale_images/tale_cover.png" alt="" class="img-thumbnail custom-rounded fit-cover">
+                <div class="overlay"></div>
+              </div>
+            </a>
+          </div>
+          <div class="col mt open-sans">
+            <h2 style="font-weight: bold;">Tale <br> <span class="bordered-text">GAME</span></h2>
+            <p style="font-size: 14.5px;line-height: 1.6;">
+              A 2.5D puzzle-platformer created to explore ludonarrative design through mechanics as metaphor and
+              defamiliarization. The game was developed in Unity.
+              <br><br><br><br><b>Date:</b> 2021
+              <br><b>Purpose:</b> Final year Project for BSc
+              <br><b>Subjects:</b> Game Design, Level Design, Narrative Design, 3D, Programming
+              <br><b>Programs:</b> Unity, Maya, Photoshop, Visual Studio (C#)
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid mx-auto article-spacer">
+    <div class="container">
+      <div class="container mx-auto image-wrapper">
+        <div class="row wow scroll-animation " data-aos="fade-left" data-aos-duration="1000" data-aos-once>
+          <div class="col-7">
+            <a href="p_detective_of_the_rift.html" class="">
+              <div class="position-relative project-preview">
+                <img src="images/dotr_images/detective of the rift cover.png" alt=""
+                  class="img-thumbnail custom-rounded fit-cover">
+                <div class="overlay"></div>
+              </div>
+            </a>
+          </div>
+          <div class="col mt open-sans">
+            <h2 style="font-weight: bold;">Detective of the Rift <br> <span class="bordered-text">GAME</span></h2>
+            <p style="font-size: 14.5px;line-height: 1.6;">
+              AR mobile game that draws inspiration from the world of 'The Return of the Obra Dinn.'
+              Experience a new level of interactivity with an alternative approach to inputs, designed to
+              immerse you fully in the game's pervasive atmosphere.
+              <br><br><br><br><b>Date:</b> 2021
+              <br><b>Purpose:</b> Pervasive Gaming for BSc
+              <br><b>Subjects:</b> Game Design, Programming
+              <br><b>Programs:</b> Unity, Photoshop, Visual Studio (C#)
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container-fluid mx-auto">
+    <div class="container ">
+      <div class="container mx-auto image-wrapper">
+        <div class="row wow scroll-animation" data-aos="fade-right" data-aos-duration="1000" data-aos-once>
+          <div class="col-7">
+            <a href="p_morterality.html" class="">
+              <div class="position-relative project-preview">
+                <img src="images/morterality_images/Cover Title.png" alt=""
+                  class="img-thumbnail custom-rounded fit-cover">
+                <div class="overlay"></div>
+              </div>
+            </a>
+          </div>
+          <div class="col mt open-sans">
+            <h2 style="font-weight: bold;">Morterality <br> <span class="bordered-text">GAME</span></h2>
+            <p style="font-size: 14.5px;line-height: 1.6;">
+              Unfinished 2D action platformer that weaves an immersive narrative throughout the gameplay.
+              <br><br><br><br><br><b>Date:</b> 2020
+              <br><b>Purpose:</b> Group Project for BSc
+              <br><b>Subjects:</b> Game Design, Level Design,Narrative Design, 3D, Programming
+              <br><b>Programs:</b> Unity, Blender, Photoshop, Visual Studio (C#)
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid mx-auto article-spacer">
+    <div class="container">
+      <div class="container mx-auto image-wrapper">
+        <div class="row wow scroll-animation " data-aos="fade-left" data-aos-duration="1000" data-aos-once>
+          <div class="col-7">
+            <a href="p_the_coinquest.html" class="">
+              <div class="position-relative project-preview">
+                <img src="images/the_coinquest_images/title.png" alt="" class="img-thumbnail custom-rounded fit-cover">
+                <div class="overlay"></div>
+              </div>
+            </a>
+          </div>
+          <div class="col mt open-sans">
+            <h2 style="font-weight: bold;">The Coinquest <br> <span class="bordered-text">GAME</span></h2>
+            <p style="font-size: 14.5px;line-height: 1.6;">
+              In this medieval-themed 3D game, you take control of a brave chicken. The top-down camera
+              perspective provides a comprehensive view of the game world.
+              <br><br><br><br><br><b>Date:</b> 2020
+              <br><b>Purpose:</b> User Interface Design for BSc
+              <br><b>Subjects:</b> Game Design,UI Design, Programming
+              <br><b>Programs:</b> Unity, Photoshop, Visual Studio (C#)
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container-fluid mx-auto">
+    <div class="container ">
+      <div class="container mx-auto image-wrapper">
+        <div class="row wow scroll-animation" data-aos="fade-right" data-aos-duration="1000" data-aos-once>
+          <div class="col-7">
+            <a href="p_tin_tin_level.html" class="">
+              <div class="position-relative project-preview">
+                <img src="images/tin_tin_images/cover1.png" alt="" class="img-thumbnail custom-rounded fit-cover">
+                <div class="overlay"></div>
+              </div>
+            </a>
+          </div>
+          <div class="col mt open-sans">
+            <h2 style="font-weight: bold;">Tintin: Destination Moon <br> <span
+                class="bordered-text Level-Tag">LEVEL</span>
+            </h2>
+            <p style="font-size: 14.5px;line-height: 1.6;">
+              A level recreation of the cover scene from Tintin: Destination Moon, emphasizing on lighting and
+              texturing.
+              <br><br><br><br><br><br> <b> Date:</b> 2020
+              <br><b>Purpose:</b> Texturing and Lighting for BSc
+              <br><b>Subjects:</b>Level Design, Texturing, Lighting
+              <br><b>Programs:</b> Unreal Engine, Maya, Photoshop
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid mx-auto article-spacer">
+    <div class="container">
+      <div class="container mx-auto image-wrapper">
+        <div class="row wow scroll-animation " data-aos="fade-left" data-aos-duration="1000" data-aos-once>
+          <div class="col-7">
+            <a href="p_golberg_machine.html" class="">
+              <div class="position-relative project-preview">
+                <img src="images/goldberg_images/Cover.png" alt="" class="img-thumbnail custom-rounded fit-cover">
+                <div class="overlay"></div>
+              </div>
+            </a>
+          </div>
+          <div class="col mt open-sans">
+            <h2 style="font-weight: bold;">Sci-fi Rube Goldberg Machine <br> <span class="bordered-text">GAME</span>
+            </h2>
+            <p style="font-size: 14.5px;line-height: 1.6;">
+              Sc-fi themed Goldberg machine made on Unity.
+
+              <br><br><br><br><br><b> Date:</b> 2019
+              <br><b>Purpose:</b> Game Development Pipeline for BSc
+              <br><b>Subjects:</b> Programming
+              <br><b>Programs:</b> Unity, Visual Studio (C#)
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="container-fluid mx-auto">
+    <div class="container">
+      <div class="container mx-auto image-wrapper">
+        <div class="row wow scroll-animation " data-aos="fade-right" data-aos-duration="1000" data-aos-once>
+          <div class="col-7">
+            <a href="p_mediterranean_level.html" class="">
+              <div class="position-relative project-preview">
+                <img src="images/mediterranean_images/cover1.png" alt="" class="img-thumbnail custom-rounded fit-cover">
+                <div class="overlay"></div>
+              </div>
+            </a>
+          </div>
+          <div class="col mt open-sans">
+            <h2 style="font-weight: bold;">Passione: Mediterranean Level (CS:GO) <br> <span
+                class="bordered-text levl Level-Tag">LEVEL</span>
+            </h2>
+            <p style="font-size: 14.5px;line-height: 1.6;">
+              5v5 Deathmach level based on Mediterranean environment. with a playstyle reminiscent of Counter-Strike:
+              Global Offensive (CS:GO).
+              <br><br><br><b>Date:</b> 2019
+              <br><b>Purpose:</b> Level Design for BSc
+              <br><b>Subjects:</b> Game Design, Level Design, Programming
+              <br><b>Programs:</b> Unreal Engine, Blueprints (UE)
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container-fluid mx-auto article-spacer">
+    <div class="container">
+      <div class="container mx-auto image-wrapper">
+        <div class="row wow scroll-animation " data-aos="fade-left" data-aos-duration="1000" data-aos-once>
+          <div class="col-7">
+            <a href="p_leopard_2a6.html" class="">
+              <div class="position-relative project-preview">
+                <img src="images/leopard_2a6_images/cover.png" alt="" class="img-thumbnail custom-rounded fit-cover">
+                <div class="overlay"></div>
+              </div>
+            </a>
+          </div>
+          <div class="col mt open-sans">
+            <h2 style="font-weight: bold;">Leopard 26A <br> <span class="bordered-text threeD-Tag">3D MODEL</span>
+            </h2>
+            <p style="font-size: 14.5px;line-height: 1.6;">
+              A 3D Model of a Leopard 2A6 with camouflage Texture.
+
+
+              <br><br><br><br><br><br><br><b>Date:</b> 2019
+              <br><b>Purpose:</b> Game Modelling Fundamentals for BSc
+              <br><b>Subjects:</b> 3D Modelling, Texturing and Lighting
+              <br><b>Programs:</b> Maya, Blender
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container-fluid mx-auto">
+    <div class="container">
+      <div class="container mx-auto image-wrapper">
+        <div class="row wow scroll-animation " data-aos="fade-right" data-aos-duration="1000" data-aos-once>
+          <div class="col-7">
+            <a href="p_robotob.html" class="">
+              <div class="position-relative project-preview">
+                <img src="images/robotob_images/cover.jpg" alt="" class="img-thumbnail custom-rounded fit-cover">
+                <div class="overlay"></div>
+              </div>
+            </a>
+          </div>
+          <div class="col mt open-sans">
+            <h2 style="font-weight: bold;">Robotob <br> <span class="bordered-text">GAME</span>
+            </h2>
+            <p style="font-size: 14.5px;line-height: 1.6;">
+              A 2D Action-Platformer inspired by Mega Man.
+              <br><br><br><br><br><br><b>Date:</b> 2018
+              <br><b>Purpose:</b> Final year Project for BTEC Extended Diploma
+              <br><b>Subjects:</b> Game Design, Level Design , Pixel Art, Programming (Game Maker Language)
+              <br><b>Programs:</b> Game Maker, Aseprite, Photoshop
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+  <!-- For the animation -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+  <script>
+    AOS.init();
+  </script>
+
+  <script>
+    window.addEventListener('scroll', function () {
+      AOS.refresh();
+    });
+  </script>
+
+  <script>
+    new WOW().init();
+  </script>
+
+  <script type="text/javascript">
+    document.addEventListener("DOMContentLoaded", function () {
+
+      el_autohide = document.querySelector('.autohide');
+
+      // add padding-top to bado (if necessary)
+      navbar_height = document.querySelector('.navbar').offsetHeight;
+      document.body.style.paddingTop = navbar_height + 'px';
+
+      if (el_autohide) {
+
+        var last_scroll_top = 0;
+        window.addEventListener('scroll', function () {
+          let scroll_top = window.scrollY;
+          if (scroll_top < last_scroll_top) {
+            el_autohide.classList.remove('scrolled-down');
+            el_autohide.classList.add('scrolled-up');
+          }
+          else {
+            el_autohide.classList.remove('scrolled-up');
+            el_autohide.classList.add('scrolled-down');
+          }
+          last_scroll_top = scroll_top;
+
+        });
+        // window.addEventListener
+
+      }
+      // if
+
+    });
+      // DOMContentLoaded  end
+  </script>
+</body>
+
+</html>
