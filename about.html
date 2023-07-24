@@ -146,6 +146,20 @@
     height: 80px;
     margin: 0 30px;
   }
+
+  @media (max-width: 818px) {
+    .photo-icon {
+      width: 50%;
+      height: auto;
+    }
+  }
+
+  @media (min-width: 818px) {
+    .photo-icon {
+      width: 25%;
+      height: auto;
+    }
+  }
 </style>
 
 <body>
@@ -184,7 +198,7 @@
   </h2>
   </div>
   <div class="container mt-4 mb-3">
-    <img src="images/photo_Icon1.png" alt="" class="img-fluid mx-auto" style="width: 25%; display: flex;">
+    <img src="images/photo_Icon1.png" alt="" class="img-fluid mx-auto photo-icon" style="display: flex;">
     <div class="overlay"></div>
   </div>
 
