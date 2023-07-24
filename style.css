@@ -667,6 +667,8 @@ body {
 
 .article-spacer {
   background-color: rgba(161, 161, 161, 0.1);
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
 .position-relative:hover .overlay {
@@ -691,7 +693,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* Adjust the height as needed */
 }
 
 .carousel-control-prev {
@@ -741,4 +742,11 @@ body {
 
 ::-webkit-scrollbar-thumb {
   background: #262626;
+}
+
+@media (max-width: 818px) {
+  .video-container iframe {
+    width: auto;
+    height: auto;
+  }
 }
