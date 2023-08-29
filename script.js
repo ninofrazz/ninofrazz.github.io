@@ -35,9 +35,9 @@ const text = document.querySelector(".typing-text");
 
 // make a words array
 const words = [
-  "software craftsman.",
-  "creative thinker.",
-  "resourceful troubleshooter.",
+  "a software craftsman.",
+  "a creative thinker.",
+  "a resourceful troubleshooter.",
 ];
 
 // start typing effect
