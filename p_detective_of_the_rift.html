@@ -163,16 +163,20 @@
 
   @media (min-width: 818px) {
     .btn {
-      width: 98%;
-      height: 27%;
+      width: 100%;
+      height: 160%;
     }
   }
 
   @media (max-width: 818px) {
     .btn {
       width: 100%;
-      height: 10%;
+      height: 100%;
     }
+  }
+
+  html {
+    scroll-behavior: smooth;
   }
 </style>
 
@@ -233,9 +237,14 @@
                 <br><b>Subjects:</b> Game Design, Programming
                 <br><b>Programs:</b> Unity, Photoshop, Visual Studio (C#)
               </p>
-              <a href="https://ninofrazzitta.itch.io/detective-of-the-rift">
-                <button class="btn btn-light"><b>Play it: Itch.io</b></button>
-              </a>
+              <div style="display: flex;margin-bottom: 20px;">
+                <a href="https://ninofrazzitta.itch.io/detective-of-the-rift" style="margin-right: 20px; flex: 1;">
+                  <button class="btn btn-light" style="width: 100%;"><b>Play it: Itch.io</b></button>
+                </a>
+                <a href="#GDD" style="flex: 1;">
+                  <button class="btn btn-secondary" style="width: 100%;"><b>Check: GGD</b></button>
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -258,8 +267,10 @@
 
     <div class="container my-3">
       <h2>The Concept</h2>
-      <p>Detective of the Rift is an immersive first-person graphic adventure that pushes the boundaries of interactive
-        storytelling. Impersonating a detective with supernatural abilities enables you to perceive the temporal instant
+      <p>Detective of the Rift is an immersive first-person graphic adventure that pushes the boundaries of
+        interactive
+        storytelling. Impersonating a detective with supernatural abilities enables you to perceive the temporal
+        instant
         of a victim's death. The game is a more pervasive take to "Return of the Obra Dinn" rather than a full
         inspiration.</p>
       <p>
@@ -272,8 +283,10 @@
         <div class="col">
           <h2>Interaction Design</h2>
           <p>
-            To fulfil our assignment's requirements, I embarked on the development of a captivating game that seamlessly
-            integrates multiple inputs. So I decided to do this on mobile and use a gyroscope, touch and voice commands
+            To fulfil our assignment's requirements, I embarked on the development of a captivating game that
+            seamlessly
+            integrates multiple inputs. So I decided to do this on mobile and use a gyroscope, touch and voice
+            commands
             delivering a game that could embrace multiple interactions in harmony to deliver
             an immersive gameplay experience.
           </p>
@@ -295,7 +308,8 @@
           <h2>World Navigation on Mobile</h2>
           <p>To ensure a seamless and immersive player experience within the mobile environment, I implemented a
             navigation system that guides players through specific locations they can traverse. This deliberate design
-            choice allows for precise control over what players can see, enabling a more cohesive and engaging narrative
+            choice allows for precise control over what players can see, enabling a more cohesive and engaging
+            narrative
             tailored to the detective genre.
           </p>
 
@@ -306,7 +320,8 @@
             storytelling experience, ensuring that players are immersed in a compelling detective narrative.</p>
 
           <p>Through this thoughtful approach to navigation, players will find themselves absorbed in the
-            intricacies of the game world, discovering hidden secrets, and piecing together the puzzle that lies before
+            intricacies of the game world, discovering hidden secrets, and piecing together the puzzle that lies
+            before
             them.</p>
         </div>
         <!-- style="margin-top: 80px;" -->
@@ -321,8 +336,10 @@
 
           </div>
           <div class="container my-4 text-center">
-            <h2>Game Poster</h2>
-            <img src="images/dotr_images/poster.jpg" alt="Image" class="img-fluid mt-3">
+            <section id="GDD">
+              <h2>GDD Poster</h2>
+              <img src="images/dotr_images/poster.jpg" alt="Image" class="img-fluid mt-3">
+            </section>
           </div>
         </div>
       </div>
