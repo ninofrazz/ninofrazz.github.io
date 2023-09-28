@@ -164,15 +164,15 @@
 
   @media (min-width: 818px) {
     .btn {
-      width: 98%;
-      height: 27%;
+      width: 100%;
+      height: 220%;
     }
   }
 
   @media (max-width: 818px) {
     .btn {
       width: 100%;
-      height: 10%;
+      height: 100%;
     }
   }
 </style>
@@ -232,9 +232,14 @@
                 <br><b>Subjects:</b> Game Design,UI Design, Programming
                 <br><b>Programs:</b> Unity, Photoshop, Visual Studio (C#)
               </p>
-              <a href="https://ninofrazzitta.itch.io/tale">
-                <button class="btn btn-light"><b>Play it: Itch.io</b></button>
-              </a>
+              <div style="display: flex;margin-bottom: 20px;">
+                <a href="https://ninofrazzitta.itch.io/the-coinquest" style="margin-right: 20px; flex: 1;">
+                  <button class="btn btn-light" style="width: 100%;"><b>Play it: Itch.io</b></button>
+                </a>
+                <a href="images/the_coinquest_images/GDD.docx" style="flex: 1;">
+                  <button class="btn btn-primary" style="width: 100%;"><b>Download: GGD</b></button>
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -272,10 +277,12 @@
             movement system that uses AI pathing and a scoring system.
           </p>
           <h2>The Concept</h2>
-          <p>The primary goal is to increase your score by collecting coins while minimizing the number of steps taken.
+          <p>The primary goal is to increase your score by collecting coins while minimizing the number of steps
+            taken.
           </p>
 
-          <p> However, there's an additional challenge to overcome the hunger meter, which gradually depletes over time.
+          <p> However, there's an additional challenge to overcome the hunger meter, which gradually depletes over
+            time.
           </p>
 
           <p> To ensure your chicken's survival, you must gather apples to replenish the hunger meter. To win the game
@@ -285,7 +292,7 @@
 
         </div>
         <div class="col">
-          <img src="images/the_coinquest_images/game.jpg" alt="Image" class="img-fluid">
+          <img src="images/the_coinquest_images/game.png" alt="Image" class="img-fluid">
           <div class="caption text-center">Starting Position</div>
         </div>
 
@@ -294,7 +301,7 @@
           <p>When opening selection you are presented with this character selection. Here you can input the name and
             select the character, which in this case we have only the chicken available. </p>
           <div class="container justify-content-center d-flex">
-            <img src="images/the_coinquest_images/characters.jpg" alt="Image" class="img-fluid"
+            <img src="images/the_coinquest_images/characters.png" alt="Image" class="img-fluid"
               style="width: 70%;border: solid 5px;">
           </div>
           <div class="caption text-center">Character Selector</div>
@@ -302,7 +309,7 @@
         <!-- style="margin-top: 80px;" -->
         <div class="row mt-4">
           <div class="col">
-            <img src="images/the_coinquest_images/chest .jpg" alt="Image" class="img-fluid mt-3">
+            <img src="images/the_coinquest_images/chest.png" alt="Image" class="img-fluid mt-3">
             <div class="caption text-center">Chest Encounter</div>
           </div>
           <div class="col">
@@ -357,7 +364,7 @@
           <div class="container my-4">
             <div class="row">
               <div class="col">
-                <img src="images/the_coinquest_images/score.jpg" alt="Image" class="img-fluid mt-3">
+                <img src="images/the_coinquest_images/score.png" alt="Image" class="img-fluid mt-3">
                 <div class="caption text-center">Score Report</div>
                 <img src="images/the_coinquest_images/scoreboard.png" alt="Image" class="img-fluid mt-3">
                 <div class="caption text-center">Leaderboard</div>
