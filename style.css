@@ -627,7 +627,7 @@ body {
   color: white;
   opacity: 0.5;
   text-align: center;
-  transition: opacity 0.3s ease;
+  transition: opacity 0.2s ease;
 }
 
 .container-highlighs:hover {
@@ -650,7 +650,7 @@ body {
   height: 300px;
   position: relative;
   border: 5px solid rgba(255, 255, 255, 0.2);
-  border-radius: 14%;
+  border-radius: 10%;
   overflow: hidden;
   transition: border-color 0.3s ease, border-size 0.3s ease;
 }
@@ -659,7 +659,7 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 11%;
+  border-radius: 5%;
 }
 
 .owl-theme .owl-dots .owl-dot {
