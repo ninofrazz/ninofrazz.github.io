@@ -554,6 +554,18 @@
       transition: color 0.3s ease;
     }
 
+    #preloader {
+      background: url("loading.gif") no-repeat center center;
+      height: 100%;
+      width: 100%;
+      position: fixed;
+      z-index: 999;
+    }
+
+    #content {
+      display: none;
+    }
+
     /* .owl-carousel {
       margin-bottom: 5px;
       background-color: rgba(255, 255, 255, 0.2);
@@ -653,27 +665,28 @@
             <div class="container-img mb-3 py-2 mx-3">
               <div class="image-container zoom-effect">
                 <a href="p_the_sunseeker.html">
-                  <div class="animated_gif_1"></div>
+                  <div id="preloader"></div>
+                  <div class="animated_gif_1" id="content" style="display:none;"></div>
                 </a>
               </div>
             </div>
-            <div class="container-img py-2">
+            <div class=" container-img py-2">
               <div class="image-container zoom-effect">
                 <a href="p_tale.html">
-                  <div class="animated_gif_2"></div>
+                  <div class="animated_gif_2 preloader"></div>
                 </a>
               </div>
             </div>
-            <div class="container-img py-2 mx-3">
+            <div class=" container-img py-2 mx-3">
               <div class="image-container zoom-effect">
                 <a href="p_detective_of_the_rift.html">
-                  <div class="animated_gif_3"></div>
+                  <div class="animated_gif_3 preloader"></div>
                 </a>
               </div>
             </div>
           </div>
 
-          <div class="row justify-content-center">
+          <div class=" row justify-content-center">
             <div class="col-6 d-flex justify-content-center">
               <div class="container-img mb-5 py-2 mx-3">
                 <div class="image-container zoom-effect1">
@@ -688,7 +701,7 @@
               <div class="container-img mb-5 py-2">
                 <div class="image-container zoom-effect">
                   <a href="p_the_coinquest.html">
-                    <div class="animated_gif_5"></div>
+                    <div class="animated_gif_5 preloader"></div>
                   </a>
                 </div>
               </div>
