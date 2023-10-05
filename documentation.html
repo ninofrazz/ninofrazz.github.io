@@ -20,7 +20,7 @@
 <!--Autohide navbar Script-->
 <style type="text/css">
   body {
-    background: linear-gradient(to bottom, #0c0c70, #1499bd);
+    background: linear-gradient(to bottom, #2C5364, #203A43);
     color: white;
     height: 100%;
     margin: 0;
@@ -157,18 +157,19 @@
     width: 100%;
   }
 
-  @media (min-width: 818px) {
-    .btn {
-      width: 98%;
-      height: 27%;
-    }
+  .footer {
+    padding: 20px;
+    height: 60px;
   }
 
-  @media (max-width: 818px) {
-    .btn {
-      width: 100%;
-      height: 10%;
-    }
+  #Mypdf {
+    width: 450px;
+    height: 590px;
+
+    border: 8px solid #323639;
+    /* You can adjust the border thickness and color */
+    /* Adjust the width as needed */
+    /* Adjust the height as needed */
   }
 </style>
 
@@ -186,7 +187,7 @@
             <a class="nav-link px-5 font-weight-bold" aria-current="page" href="index.html">HOME</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active px-5 font-weight-bold" href="projects.html" tabindex="-1" aria-disabled="true">ALL
+            <a class="nav-link px-5 font-weight-bold" href="projects.html" tabindex="-1" aria-disabled="true">ALL
               PROJECTS</a>
           </li>
           <li class="nav-item">
@@ -194,7 +195,7 @@
               aria-disabled="true">PROFESSIONAL</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link px-5 font-weight-bold" href="documentation.html" tabindex="-1"
+            <a class="nav-link active px-5 font-weight-bold" href="documentation.html" tabindex="-1"
               aria-disabled="true">DOCUMENTATION</a>
           </li>
           <li class="nav-item">
@@ -205,98 +206,108 @@
       </div>
     </div>
   </nav>
-  <h2 class="text-center article-spacer pt-3">ROBOTOB
+  <h2 class="text-center article-spacer pt-3">DOCUMENTATION
     <hr class="thicker-hr mb-3">
   </h2>
   </div>
 
-  <div class="open-sans">
+  <div class="open-sans mb-5">
     <div class="container-fluid mx-auto">
       <div class="container">
-        <div class="container mx-auto image-wrapper">
+        <div class="container mx-auto image-wrapper text-center">
           <div class=" row">
-            <div class="col-6">
-              <div class="">
-                <img src="images/robotob_images/cover.jpg" alt="" class="img-fluid mx-auto">
-                <div class="overlay"></div>
-              </div>
-              </a>
-            </div>
             <div class="col">
-              <p style="font-size: 15px;line-height: 1.6;">
 
-                A 2D Action-Platformer inspired by Mega Man.
-                <br><br><br><b>Date:</b> 2018
-                <br><b>Purpose:</b> Final year Project for BTEC Extended Diploma
-                <br><b>Subjects:</b> Game Design, Level Design , Pixel Art, Programming (Game Maker Language)
-                <br><b>Programs:</b> Game Maker, Aseprite, Photoshop
-              </p>
-              <a href="images/robotob_images/Final GDD_Nino.docx">
-                <button class="btn btn-primary"><b>Download: GGD</b></button>
-              </a>
+              This page will showcase some of the various game documents that I created for my past projects. For more
+              detailed information, you can explore the individual project pages.
+
             </div>
           </div>
         </div>
       </div>
     </div>
-
-    <div class="container video-container my-5">
-
-      <div class="row">
+  </div>
+  <div class="container my-4">
+    <div class="row">
+      <div class="col">
+        <h2>Narrative Design: Little Red Riding Hood Twine</h2>
+        <p>The design document was created to support the creation of a Twine game, which is an inspired take on 'Little
+          Red Riding Hood' with a crime fiction twist.
+        </p>
+        <p>
+          The player impersonates the hunter, who in this case will be the detective of the story. They will have to
+          gather all the evidence and finally make a dramatic final decision to blame the culprit.
+        </p>
+        <p>The game will make use of some of the most popular narrative design techniques to present an experience that
+          entertains the player solely through raw storytelling.</p>
+      </div>
+      <div class="col ml-5">
+        <iframe src="images/Storytelling and Narrative Development A. Frazzitta.pdf" frameborder="0"
+          id="Mypdf"></iframe>
+      </div>
+      <!-- style="margin-top: 80px;" -->
+      <div class="row mt-5">
+        <div class="col ml-5">
+          <iframe src="images/Research Paper - Antonino Frazzitta.pdf" frameborder="0" id="Mypdf"></iframe>
+        </div>
         <div class="col">
-          <iframe width="1280" height="720" src="https://www.youtube.com/embed/lc0tPuroVXY" title="YouTube video player"
-            frameborder="0"
+          <h2>Game Analysis: League of Legends</h2>
+          <p> I conducted a research based on the League of Legends API, where I attempted to identify the various
+            playstyles of the players who populate such games.
+          </p>
+          <p>I examined the game through two lenses. One focuses on how their skill and experience in the game can
+            affect their playstyle, while the other concentrates on player aggressiveness, comparing the intensity of
+            experienced players to newcomers.</p>
+
+        </div>
+      </div>
+      <div class="row mt-5">
+        <div class="col">
+          <h2>Design Diary of a Board Game: Mine Wars</h2>
+          <p>My colleague and I created a game called 'Mine Wars,' which is a turn-based strategy game. In this game,
+            players compete in 1v1 matches to collect gold and defeat their opponent by capturing four mine locations.
+            The players spend the gold, generated by the mines, to buy units and resources for the battle, which will
+            be
+            placed in a honeycomb-shaped terrain.</p>
+          </p>
+          <p> Additionally, there are special locations where players can gain
+            additional tactical advantages, such as the mercenary base and the dragon pit. The combat is based on a
+            rock-paper-scissors approach represented by the classes of the units.</p>
+          <img src="images/BoardGame.jpg" alt="Image" class="img-fluid mt-2">
+          <div class="caption text-center">Final Product</div>
+        </div>
+        <div class="col ml-5">
+          <iframe src="images/Mine wars design diary.pdf" frameborder="0" id="Mypdf"></iframe>
+        </div>
+      </div>
+
+      <div class="row mt-5">
+        <div class="col ml-5">
+          <iframe src="images/GDD Fantastic Quest.pdf" frameborder="0" id="Mypdf"></iframe>
+        </div>
+        <div class="col">
+          <h2>GDD: The Fantastic Quest</h2>
+          <p>The Fantastic Quest is a shoot 'em up game inspired by the classic King's Knight. Players have the option
+            to choose from up to three different classes, each with unique stats and spells that impact gameplay. The
+            main objective is to journey through various levels, culminating in a final battle against a formidable
+            dragon boss.
+          </p>
+          <p>This game offers a blend of shooter and RPG elements, requiring players to engage in combat
+            while also leveling up important stats like attack, defense, and dexterity. This progression system provides
+            players with a tangible sense of advancement throughout their adventure.</p>
+
+
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/RIa17C2Lzpk?si=SrJ62CGoIWR9niXO"
+            title="YouTube video player" frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowfullscreen></iframe>
-          <div class="caption text-center">Gameplay Showcase</div>
 
         </div>
-      </div>
-    </div>
 
-    <div class="container my-3">
-      <h2>The Concept</h2>
-      <p>The game draws inspiration from the Megaman X series and features a Metroidvania structure. It is divided into
-        smaller sections enclosed within distinct areas. Each area is represented by a specific element, and at the end
-        of
-        each area, there will be a boss fight associated with that element.</p>
-    </div>
-
-    <div class="container mt-5 mx-auto d-flex justify-content-center align-items-center">
-      <img src="images/robotob_images/lev1.jpg" alt="Image" class="" style="width: 100%;">
-    </div>
-    <div class="caption text-center">Gameplay Screen</div>
-
-    <div class="container my-4">
-      <h2>Metroidvania</h2>
-      <p>Upon defeating a boss, the protagonist will acquire a new ability that unlocks further progression within the
-        game. These abilities are essential for overcoming obstacles and accessing previously inaccessible areas,
-        promoting exploration and backtracking. This mechanic adds depth and strategic gameplay elements to the overall
-        experience, allowing players to navigate the game world in new and creative ways.</p>
-      </p>
-      <div class="col">
-        <img src="images/robotob_images/LevBoss.jpg" alt="Image" class="img-fluid mt-3">
-        <div class="caption text-center">Boss Fight</div>
-      </div>
-      <div class="row mt-4">
-        <div class="col">
-          <img src="images/robotob_images/BossDeath.jpg" alt="Image" class="img-fluid mt-3">
-          <div class="caption text-center">Boss Dropping the Power Up</div>
-        </div>
-        <div class="col">
-          <img src="images/robotob_images/NewAbility.jpg" alt="Image" class="img-fluid mt-3">
-          <div class="caption text-center">Player using the new Ability</div>
-        </div>
       </div>
     </div>
   </div>
 
-
-
-
-  </div>
-  </div>
-  </div>
   <hr class="thicker-hr" style="margin-bottom: 0px;">
   <footer class="footer article-spacer text-center">
     <p>© Antonino Frazzitta 2023</p>
